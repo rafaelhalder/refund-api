@@ -54,8 +54,6 @@
  */
 import { Router } from "express";
 import { UsersController } from "@/controllers/users-controller";
-import swaggerJSDoc from "swagger-jsdoc";
-
 
 const usersRoutes = Router();
 const usersController = new UsersController();
