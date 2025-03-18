@@ -7,4 +7,8 @@ refundsRoutes.post(
   "/",
   verifyUserAuthorization(["employee"]),
   refundsController.create);
+
+refundsRoutes.get("/",
+verifyUserAuthorization(["manager"]),
+refundsController.index);
 export { refundsRoutes };
